@@ -1,0 +1,134 @@
+.feed {
+  background-color: var(--gray-800);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.feed+.feed {
+  margin-top: 2%;
+}
+
+.feed>header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorInfos strong {
+  display: block;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.authorInfos span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.excerpt {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.body {
+  margin-top: 1.4rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.time {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.hashtags {
+  margin-top: 2rem;
+}
+
+.hashtags a {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.hashtags a:hover {
+  color: var(--secondary);
+}
+
+/* Comment Form CSS */
+
+.commentForm {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-600);
+}
+
+.commentForm>strong {
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.commentForm textarea {
+  width: 100%;
+  background-color: var(--gray-900);
+  border: 0;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--white);
+  line-height: 1.4;
+  margin: 1rem 0 1rem;
+}
+
+.commentForm button[type=submit] {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--gray-100);
+  background: var(--primary);
+
+  transition: background-color 0.1s;
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
+
+.commentForm button[type=submit]:hover {
+  background: var(--secondary);
+}
+
+.commentList {
+  margin-top: 2rem;
+}
